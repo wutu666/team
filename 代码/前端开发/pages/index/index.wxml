@@ -1,0 +1,31 @@
+<view class="loginNav">
+  <view class="loginPicture1">随手记</view>
+
+  <view class="navLine1">
+    <text>2021年</text>
+    <text>收入</text>
+    <text>支出</text>
+  </view>
+  <view class="navLine2">
+    <text>5月</text>
+    <text>0.00</text>
+    <text>0.00</text>
+  </view>
+</view>
+
+<view class="loginMiddle">
+  <image mode="scaleToFill" src="https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184519.png"></image>
+</view>
+
+<view class="loginBottom">
+<image src="https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184633.png"></image>
+<image src="https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184755.png"></image>
+<image src="https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184650.png"></image>
+<image src="https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184539.png"></image>
+<image src="https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184704.png"></image>
+<view>明细</view>
+<view>图表</view>
+<view>记账</view>
+<view>账单</view>
+<view>我的</view>
+</view>
