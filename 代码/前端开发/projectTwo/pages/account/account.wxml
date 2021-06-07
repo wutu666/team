@@ -9,3 +9,65 @@
   <view class="choicePic"></view>
   <view class="inputMoney"></view>
 </view>
+<view class="accountBottom">
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+  <view class="imageBox">
+    <image src="/images/吃2.png"></image>
+    <view class="myText">吃喝</view>
+  </view>
+</view>

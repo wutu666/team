@@ -35,3 +35,24 @@
   width: 100%;
   border: 1px red solid;
 }
+/* 选择消费类型的图片 */
+.accountBottom{
+  padding: 15rpx;
+}
+
+.imageBox{
+  margin: 8rpx;
+  position: relative;
+  display: inline-block;
+}
+
+.accountBottom image{
+  margin: 15rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.myText{
+  position:absolute;
+  top: 110rpx;
+  left: 25rpx;
+}
