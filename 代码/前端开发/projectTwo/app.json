@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/bill/bill",
+    "pages/account/account",
+    "pages/chart/chart"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{ 
+    "color": "#000000",  
+    "selectedColor": "#f8f8ff",  
+    "borderStyle": "black" ,
+    "backgroundColor": "#9999ff",
+    "list": [{  
+      "selectedIconPath": "/images/mingxi1.png",  
+      "iconPath": "/images/mingxi.png",  
+      "pagePath": "pages/index/index",  
+      "text": "明细"  
+    }, {  
+      "selectedIconPath": "/images/chart1.png",  
+      "iconPath": "/images/chart.png",  
+      "pagePath": "pages/chart/chart",  
+      "text": "图表"  
+    },{  
+      "selectedIconPath": "/images/jizhang1.png",  
+      "iconPath": "/images/jizhang.png",  
+      "pagePath": "pages/account/account",  
+      "text": "记账" 
+    },{
+      "selectedIconPath": "/images/bill1.png",  
+      "iconPath": "/images/bill.png",  
+      "pagePath": "pages/bill/bill",  
+      "text": "账单"
+    },{
+      "selectedIconPath": "/images/mine1.png",  
+      "iconPath": "/images/mine.png",  
+      "pagePath": "pages/mine/mine",  
+      "text": "我的" }
+   ]  
+  }
+}

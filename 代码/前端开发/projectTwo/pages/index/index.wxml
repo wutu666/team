@@ -1,0 +1,23 @@
+
+<view class="loginNav">
+  <view class="loginPicture1">随手记</view>
+
+  <view class="navLine1">
+    <text>2021年</text>
+    <text>收入</text>
+    <text>支出</text>
+  </view>
+  <view class="navLine2">
+    <text>5月</text>
+    <text>0.00</text>
+    <text>0.00</text>
+  </view>
+</view>
+
+<view class="loginBottom">
+  <image mode="scaleToFill" src="https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184519.png"></image>
+</view>
+
+
+
+

@@ -1,0 +1,10 @@
+.loginNav{
+  height: 160rpx;
+  width: 100%;
+  background-image: url(https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184803.png);
+}
+.loginPicture1{
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
