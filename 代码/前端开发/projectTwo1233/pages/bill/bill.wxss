@@ -1,0 +1,122 @@
+/* pages/bill/bill.wxss */
+.loginNav{
+  height: 275rpx;
+  width: 100%;
+  background-image: url(https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184803.png);
+}
+.loginPicture1{
+  position: relative;
+  top: 10rpx;
+  left: 10rpx;
+}
+
+.list-msg {
+  padding: 0 10rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+/* .list-msg1 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+} */
+.year,.month,.day{
+  display: inline-block;
+  margin-right: 23rpx;
+}
+.year{
+  position: relative;
+  width: 220rpx;
+  display: inline-block;
+}
+.nian{
+  position: relative;
+  left: 206rpx;
+  top: -51rpx;
+}
+.month{
+  position: relative;
+  width: 220rpx;
+  display: inline-block;
+}
+.yue{
+  position: relative;
+  left: 208rpx;
+  top: -51rpx;
+}
+.day{
+  position: relative;
+  width: 220rpx;
+  display: inline-block;
+}
+.ri{
+  position: relative;
+  left: 208rpx;
+  top: -51rpx;
+}
+.list-msg2 {
+  width: 180rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+}
+
+.selectyear_box {
+  background-color: #eee;
+  padding: 0 10rpx;
+  width: 185rpx;
+  position: absolute;
+  top: 65rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.25s;
+}
+
+.selectmonth_box{
+  background-color: #eee;
+  padding: 0 10rpx;
+  width: 186rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.1s;
+  position: absolute;
+  top:65rpx;
+  left:250rpx;
+}
+
+.selectday_box{
+  background-color: #eee;
+  padding: 0 10rpx;
+  width: 180rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.05s;
+  position: absolute;
+  top:65rpx;
+  left: 495rpx;
+}
+
+
+@keyframes myfirst {
+  from {
+      height: 0rpx;
+  }
+
+  to {
+      height: 210rpx;
+  }
+}
+
+.select_one {
+  width: 93%;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}

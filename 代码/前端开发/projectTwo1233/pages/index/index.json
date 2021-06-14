@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "HeadPic":"/Component/HeadPic/HeadPic"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

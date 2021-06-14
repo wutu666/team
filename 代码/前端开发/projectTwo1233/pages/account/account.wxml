@@ -1,0 +1,54 @@
+<view class="loginNav">
+  <view class="loginPicture1">随手记</view>
+  <view class="btnChoice">
+  <button style="width:50%" class="btnIncome{{chooseIncome?'':'-notchoose'}}" bindtap="Income">支出</button>
+  <button style="width:50%" class="btnExpenditure{{chooseExpenditure?'':'-notchoose'}}" bindtap="Expenditure">收入</button>
+  </view>
+</view>
+
+<view class="choiseIncome" wx:if="{{chooseIncome == true}}">
+  <view class="choiceAccount">
+    <view class="choicePic">
+      <image src="{{outchooseSrc}}"></image>
+    </view>
+    <view class="MLabel">￥</view>
+    <view class="inputMoney"><input type="number" placeholder="请输入金额" bindinput="getInputValue1"></input></view>  
+  </view>
+
+  <view class="accountBottom">
+    <view class="imageBox" id="" wx:for="{{pic}}" wx:for-item="item" wx:key="index1">
+      <view data-id="{{item.id}}" id="{{item.id}}" bindtap="tapPic">
+        <image src="{{item.src}}"></image>
+        <view class="myText">{{item.mytest}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="addBottom">
+    <button style="height:80rpx;width:265rpx" bindtap="submitout">添 加</button>
+  </view>
+</view>
+
+<view class="choiseExpenditure" wx:if="{{chooseExpenditure == true}}">
+  <view class="choiceAccount">
+    <view class="choicePic">
+      <image src="{{inchooseSrc}}"></image>
+    </view>
+    <view class="MLabel">￥</view>
+    <view class="inputMoney"><input type="number" placeholder="请输入金额" bindinput="getInputValue2"></input></view>  
+  </view>
+  <view class="accountBottom">
+    <view class="imageBox" id="" wx:for="{{picincome}}" wx:for-item="item" wx:key="index2">
+      <view data-id="{{item.id}}" id="{{item.id}}" bindtap="tapinPic">
+        <image src="{{item.src}}"></image>
+        <view class="myText">{{item.mytest}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="addBottom">
+    <button style="height:80rpx;width:265rpx" bindtap="submitin">添 加</button>
+  </view>
+</view>
+
+
+

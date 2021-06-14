@@ -1,0 +1,44 @@
+<!--pages/bill/bill.wxml-->
+<view class="loginNav">
+  <view class="loginPicture1">随手记</view>
+</view>
+<view class='list-msg'>
+  <view class="year">
+    <view class='list-msg2' bindtap='bindShowyear'>
+        <text>{{year}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/jiantou.png'></image>
+    </view>
+    <view class="nian">年</view>
+  </view>
+  <view class="month">
+    <view class='list-msg2' bindtap='bindShowmonth'>
+        <text>{{month}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/jiantou.png'></image>
+    </view>
+    <view class="yue">月</view>
+  </view>
+  <view class="day">
+    <view class='list-msg2' bindtap='bindShowday'>
+        <text>{{day}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/jiantou.png'></image>
+    </view>
+    <view class="ri">日</view>
+  </view>
+
+    <view class="selectyear_box" wx:if="{{selectyear}}">
+        <view class="select_one" bindtap="mySelectyear" data-name="2020">2020</view>
+        <view class="select_one" bindtap="mySelectyear" data-name="2021">2021</view>
+    </view>
+
+    <view class="selectmonth_box" wx:if="{{selectmonth}}">
+        <view class="select_two" bindtap="mySelectmonth" wx:for="{{12}}" data-id="{{index+1}}" wx:key="index2">
+            <view class="select_one">{{index+1}}</view>
+        </view>
+    </view>
+
+    <view class="selectday_box" wx:if="{{selectday}}">
+        <view class="select_three" bindtap="mySelectday" wx:for="{{monthday}}" data-day="{{index+1}}" wx:key="index3">
+            <view class="select_one">{{index+1}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,113 @@
+.loginNav{
+  height: 275rpx;
+  width: 100%;
+  background-image: url(https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184803.png);
+}
+.loginPicture1{
+  position: relative;
+  top: 10rpx;
+  left: 10rpx;
+}
+.btnChoice{
+  position: absolute;
+  top: 170rpx;
+  left: 202rpx;
+}
+
+/* 收入按钮 */
+.btnIncome{
+  display: inline-block;
+  border-radius: 50rpx 0 0 50rpx;
+}
+
+.btnIncome-notchoose{
+  display: inline-block;
+  border-radius: 50rpx 0 0 50rpx;
+}
+
+/* 支出按钮 */
+.btnExpenditure{
+  display: inline-block;
+  border-radius: 0 50rpx 50rpx 0;
+  position: relative;
+  left: 20rpx;
+}
+.btnExpenditure-notchoose{
+  display: inline-block;
+  border-radius: 0 50rpx 50rpx 0;
+  position: relative;
+  left: 20rpx;
+}
+
+.choiceAccount{
+  height: 100rpx;
+  width: 100%;
+  border: 1px #9b9be4 solid;
+  position: relative;
+}
+
+/* 选择消费类型的图片 */
+.accountBottom{
+  padding: 15rpx;
+}
+.choicePic{
+  width: 100rpx;
+  height: 100rpx;
+}
+.choicePic image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 15rpx;
+}
+.inputMoney{
+  width: 40%;
+  display: inline;
+  float: right;
+  color: #9b9be4;
+}
+.inputMoney input{
+  height: 100rpx;
+  margin-top: 30rpx;
+  font-size: 50rpx;
+  position: absolute;
+  top: -27rpx;
+}
+.MLabel{
+  display: inline;
+  float: right;
+  margin-top: 30rpx;
+  font-size: 50rpx;
+  margin: 10px;
+  position: absolute;
+  top: 0rpx;
+  right: -20rpx;
+  color: #9b9be4;
+}
+
+.imageBox{
+  margin: 9rpx;
+  position: relative;
+  display: inline-block;
+}
+
+.accountBottom image{
+  margin: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+.myText{
+  position:absolute;
+  top: 135rpx;
+  left: 48rpx;
+  color: #7474db;
+}
+
+.addBottom{
+  position: absolute;
+  top:975rpx;
+  right:50rpx;
+}
+.addBottom button{
+  border-radius: 35rpx;
+  background-color: #9b9be4;
+}

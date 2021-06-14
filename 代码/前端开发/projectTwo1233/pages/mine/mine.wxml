@@ -1,0 +1,14 @@
+<!--pages/mine/mine.wxml-->
+<HeadPic></HeadPic>
+
+<view class="kefu">
+  <view>联系客服</view>
+  <button style="height:80rpx;width:100%;" type="primary" open-type="contact"></button>
+</view>
+<view class="fankui">
+  <view>反馈服务</view>
+  <button style="height:80rpx;width:100%;" type="primary"></button>
+</view>
+<view class="picBottom">
+  <image src="/images/me.png" mode="heightFix"></image>
+</view>

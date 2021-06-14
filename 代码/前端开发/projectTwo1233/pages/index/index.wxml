@@ -1,0 +1,43 @@
+
+<view class="loginNav">
+  <view class="loginPicture1">随手记</view>
+
+  <view class="navLine1">
+    <text>{{tyear}}年</text>
+    <text>收入</text>
+    <text>支出</text>
+  </view>
+  <view class="navLine2">
+    <text class="nav1">{{tmonth}}月{{today}}日</text>
+    <text class="nav2">0.00</text>
+    <text class="nav3">0.00</text>
+  </view>
+</view>
+
+<view class="loginBottom">
+  <view wx:for="{{datalist}}" wx:key="index">
+  <!-- <view wx:if="{{item.date==today}}"> -->
+    <!-- <view class="cell">
+   <movable-area class="ma">
+   <movable-view class="mv" direction="horizontal">
+    <view class="item" bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" > -->
+    <view class="data">
+    <view class="left"><image class="img" src="{{item.imgsrc}}"></image>{{item.price}}元 </view>
+    <!-- <view class="img" > <image src="{{item.imgsrc}}"></image></view> -->
+    <view class="right">{{item.time}}</view>
+    <text>\n</text>
+  <!-- </view>
+  </movable-view>
+  </movable-area>
+  <button style="width :100rpx" type="warn" class="delBtn">删除</button> -->
+<!-- </view> -->
+<!-- </view> -->
+</view>
+</view>
+
+
+  
+  </view>
+
+
+
