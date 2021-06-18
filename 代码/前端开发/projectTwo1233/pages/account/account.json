@@ -2,6 +2,7 @@
   "usingComponents": {},
   "navigationBarBackgroundColor": "#42426F",
   "navigationBarTitleText": "记账",
+  "navigationBarTextStyle":"white",
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "dark"
 }

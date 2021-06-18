@@ -7,8 +7,13 @@
 </view>
 <view class="fankui">
   <view>反馈服务</view>
-  <button style="height:80rpx;width:100%;" type="primary"></button>
+  <button style="height:80rpx;width:100%;" type="primary" bindtap="modalinput"></button>
 </view>
+   <modal hidden="{{hiddenmodalput}}" title="反馈服务" 
+        confirm-text="提交" cancel-text="取消" bindcancel="modalinput" 
+        bindconfirm="confirm" > 
+     <textarea placeholder="请提出您的宝贵意见"></textarea>
+   </modal>
 <view class="picBottom">
-  <image src="/images/me.png" mode="heightFix"></image>
+  <image src="/images/me.png"></image>
 </view>

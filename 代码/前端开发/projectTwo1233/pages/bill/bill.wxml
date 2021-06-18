@@ -1,8 +1,35 @@
 <!--pages/bill/bill.wxml-->
 <view class="loginNav">
   <view class="loginPicture1">随手记</view>
+  <view class='list-msg'>
+  
+  </view>
+  <view class="top">结余</view>
+  <view class="lastmoney">{{surplus}}</view>
+
+  <view class="top2">收入 {{in}}  ｜ 支出 {{out}}</view>
 </view>
-<view class='list-msg'>
+
+<view class="contain">
+<view class="head">月份</view>
+<view class="head">收入</view>
+<view class="head">支出</view>
+<view class="head">结余</view>
+<view class="context">
+  <view wx:for="{{lists}}" wx:key="index" > 
+    <!-- <view class="data" data-id="{{item._id}} " wx:if="{{item.exmonth<=nowmonth}}" > -->
+    <view class="data" data-id="{{item._id}} " wx:if="{{item.exmonth>=1}}" >
+      <view class="ttmonth">{{item.exmonth}}</view>
+      <view class="expendin">{{item.expendin}}</view>
+      <view class="expendout">{{item.expendout}}</view>
+      <view class="rest">{{item.expendin-item.expendout}}</view>
+    </view> 
+  </view> 
+</view>
+</view>
+
+
+<!-- <view class='list-msg'>
   <view class="year">
     <view class='list-msg2' bindtap='bindShowyear'>
         <text>{{year}}</text>
@@ -41,4 +68,17 @@
             <view class="select_one">{{index+1}}</view>
         </view>
     </view>
+</view> -->
+
+<view class="year">
+    <view class='list-msg2' bindtap='bindShowyear'>
+        <text>{{newyear}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/jiantou.png'></image>
+    </view>
+    <view class="nian">年</view>
+</view>
+<view class="selectyear_box" wx:if="{{selectyear}}">
+  <view class="select_one" bindtap="mySelectyear" data-name="2019">2019</view>
+  <view class="select_one" bindtap="mySelectyear" data-name="2020">2020</view>
+  <view class="select_one" bindtap="mySelectyear" data-name="2021">2021</view>
 </view>

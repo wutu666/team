@@ -2,6 +2,9 @@
   "usingComponents": {
     "HeadPic":"/Component/HeadPic/HeadPic"
   },
+  "navigationBarBackgroundColor": "#42426F",
+  "navigationBarTextStyle":"white",
+  "navigationBarTitleText": "个人明细",
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "dark"
 }

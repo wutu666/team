@@ -5,9 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    hiddenmodalput: true,
   },
-
+  modalinput: function () {
+    if(this.data.hiddenmodalput==true){
+      this.setData({
+        hiddenmodalput: !this.data.hiddenmodalput
+      })
+    }else{
+      this.setData({
+        hiddenmodalput: !this.data.hiddenmodalput
+      })
+    }
+  },
+  confirm(){
+    this.setData({
+      hiddenmodalput: true
+    }),
+    wx.showToast({
+      title: '感谢您的反馈',
+      icon:'success',
+      duration: 2000
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

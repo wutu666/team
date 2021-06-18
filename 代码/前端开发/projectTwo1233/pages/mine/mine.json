@@ -1,5 +1,8 @@
 {
   "usingComponents": {
     "HeadPic":"/Component/HeadPic/HeadPic"
-  }
+  },
+  "navigationBarBackgroundColor": "#42426F",
+  "navigationBarTextStyle":"white",
+  "navigationBarTitleText": "我的"
 }

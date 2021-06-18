@@ -1,43 +1,64 @@
-
+<!--pages/bill/bill.wxml-->
 <view class="loginNav">
   <view class="loginPicture1">随手记</view>
+  <view class='list-msg'>
+  <view class="year">
+    <view class='year2' bindtap='bindShowyear'>
+        <text>{{year}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/jiantou.png'></image>
+    </view>
+    <view class="nian">年</view>
+  </view>
+  <view class="month">
+    <view class='month2' bindtap='bindShowmonth'>
+        <text>{{month}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/jiantou.png'></image>
+    </view>
+    <view class="yue">月</view>
+  </view>
+  <view class="day">
+    <view class='day2' bindtap='bindShowday'>
+        <text>{{day}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/jiantou.png'></image>
+    </view>
+    <view class="ri">日</view>
+  </view>
 
-  <view class="navLine1">
-    <text>{{tyear}}年</text>
-    <text>收入</text>
-    <text>支出</text>
-  </view>
-  <view class="navLine2">
-    <text class="nav1">{{tmonth}}月{{today}}日</text>
-    <text class="nav2">0.00</text>
-    <text class="nav3">0.00</text>
-  </view>
+    <view class="selectyear_box" wx:if="{{selectyear}}">
+        <view class="select_one" bindtap="mySelectyear" data-name="2020">2020</view>
+        <view class="select_one" bindtap="mySelectyear" data-name="2021">2021</view>
+    </view>
+
+    <view class="selectmonth_box" wx:if="{{selectmonth}}">
+        <view class="select_two" bindtap="mySelectmonth" wx:for="{{12}}" data-id="{{index+1}}" wx:key="index2">
+            <view class="select_one">{{index+1}}</view>
+        </view>
+    </view>
+
+    <view class="selectday_box" wx:if="{{selectday}}">
+        <view class="select_three" bindtap="mySelectday" wx:for="{{monthday}}" data-day="{{index+1}}" wx:key="index3">
+            <view class="select_one">{{index+1}}</view>
+        </view>
+    </view>
 </view>
-
+  <view class="inlocation1">收入</view>
+  <view class="outlocation1">支出</view>
+  <view class="inlocation2">{{inmoney}}元</view>
+  <view class="outlocation2">{{outmoney}}元</view>
+</view>
 <view class="loginBottom">
   <view wx:for="{{datalist}}" wx:key="index">
-  <!-- <view wx:if="{{item.date==today}}"> -->
-    <!-- <view class="cell">
-   <movable-area class="ma">
-   <movable-view class="mv" direction="horizontal">
-    <view class="item" bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" > -->
-    <view class="data">
-    <view class="left"><image class="img" src="{{item.imgsrc}}"></image>{{item.price}}元 </view>
-    <!-- <view class="img" > <image src="{{item.imgsrc}}"></image></view> -->
-    <view class="right">{{item.time}}</view>
+    <view class="data" data-id="{{item._id}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+      <view class="left"><image class="img" src="{{item.imgsrc}}"></image>
+      <view class="mytext">
+        {{item.price}}元
+      </view>
+    </view>
+      <view class="right">{{item.year}}年{{item.month}}月{{item.day}}日
+        <image bindtap="delid" data-id="{{item._id}}" src="/images/delpic.png" style="width:50rpx;height:50rpx;position:relative;top:10rpx"></image>
+      </view>
+
     <text>\n</text>
-  <!-- </view>
-  </movable-view>
-  </movable-area>
-  <button style="width :100rpx" type="warn" class="delBtn">删除</button> -->
-<!-- </view> -->
-<!-- </view> -->
-</view>
-</view>
-
-
-  
+    </view>
   </view>
-
-
-
+</view>

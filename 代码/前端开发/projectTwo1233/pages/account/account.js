@@ -4,6 +4,9 @@ let price = ""
 let time = ""
 let img = ""
 let imgsrc = ""
+let year = ""
+let month = ""
+let day = ""
 var util = require('../../utils/util.js')
 Page({
   /**
@@ -22,7 +25,7 @@ Page({
       {src:"/images/hospital.png",id:"hospital",mytest:"医疗"},
       {src:"/images/edu.png",id:"edu",mytest:"教育"},
       {src:"/images/gift.png",id:"gift",mytest:"礼物"},
-      {src:"/images/edu.png",id:"tv",mytest:"电器"},
+      {src:"/images/tv.png",id:"tv",mytest:"电器"},
       {src:"/images/clear.png",id:"clear",mytest:"日用"},
       {src:"/images/travel.png",id:"travel",mytest:"旅游"},
       {src:"/images/career.png",id:"career",mytest:"服装"},
@@ -52,14 +55,16 @@ Page({
     wx.clearStorage(),
     this.setData({
       chooseIncome:true,
-      chooseExpenditure:false
+      chooseExpenditure:false,
+      inputInmoney:0
     })
   },
   Expenditure:function(){
     wx.clearStorage(),
     this.setData({
       chooseIncome:false,
-      chooseExpenditure:true
+      chooseExpenditure:true,
+      inputOutmoney:0
     })
   },
   onPullDownRefresh: function () {
@@ -119,7 +124,10 @@ Page({
         price: -inputOutmoney,
         time: TIME,
         img: this.data.outchooseType,
-        imgsrc: this.data.outchooseSrc
+        imgsrc: this.data.outchooseSrc,
+        year: year,
+        month: month,
+        day: day
        },
        success(res) {
          console.log("添加成功",res);
@@ -166,7 +174,10 @@ Page({
         price: inputInmoney,
         time: TIME,
         img: this.data.inchooseType,
-        imgsrc: this.data.inchooseSrc
+        imgsrc: this.data.inchooseSrc,
+        year: year,
+        month: month,
+        day: day
        },
        success(res) {
          console.log("添加成功",res);
@@ -230,7 +241,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    wx.stopPullDownRefresh()
   },
 
   /**

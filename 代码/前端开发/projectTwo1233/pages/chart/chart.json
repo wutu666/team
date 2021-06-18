@@ -1,5 +1,10 @@
 {
   "usingComponents": {
     "HeadPic":"/Component/HeadPic/HeadPic"
-  }
+  },
+  "navigationBarBackgroundColor": "#42426F",
+  "navigationBarTextStyle":"white",
+  "navigationBarTitleText": "图表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
 }

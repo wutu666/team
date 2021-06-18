@@ -1,3 +1,4 @@
+/* pages/bill/bill.wxss */
 .loginNav{
   height: 275rpx;
   width: 100%;
@@ -9,99 +10,207 @@
   left: 10rpx;
 }
 
-/* index显示界面 */
-.loginBottom{
-  width: 100%;
-  height: 825rpx;
-}
- 
-.navLine1{
+.list-msg {
+  padding: 0 10rpx;
+  background: rgb(255,255,255,0);
   position: relative;
-  top: 60rpx;
-  left: 80rpx;
-}
-.navLine1 text{
-  margin-left: 90rpx;
-  color: rgb(26,22,80)
-}
-.navLine2{
-  position: relative;
-  top: 110rpx;
-  left: 60rpx;
-}
-.navLine2 text{
-  margin-left: 120rpx;
-}
-.nav1{
-  position: relative;
-  top:0rpx;
-  left: -11rpx;
-}
-.nav2{
-  position: relative;
-  top:0rpx;
-  left: -51rpx;
-}
-.nav3{
-  position: relative;
-  top: 0rpx;
-  left: -82rpx;
+  top: 150rpx;
 }
 
+/* .list-msg1 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+} */
+.year,.month,.day{
+  display: inline-block;
+  margin-right: 23rpx;
+}
+.year{
+  position: relative;
+  top:-110rpx;
+  left: 70rpx;
+  width: 240rpx;
+  display: inline-block;
+}
+.nian{
+  position: relative;
+  left: 265rpx;
+  top: -56rpx;
+}
+.year2{
+  width: 235rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+}
+.month{
+  position: relative;
+  top: 0rpx;
+  left: -195rpx;
+  width: 100rpx;
+  display: inline-block;
+}
+.yue{
+  position: relative;
+  left: 110rpx;
+  top: -56rpx;
+}
+.month2{
+  width: 85rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+}
+.day{
+  position: relative;
+  top: 0rpx;
+  left: -168rpx;
+  width: 220rpx;
+  display: inline-block;
+}
+.ri{
+  position: relative;
+  left: 118rpx;
+  top: -56rpx;
+}
+.day2{
+  width: 85rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+}
+.list-msg2 {
+  width: 180rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+}
+
+.selectyear_box {
+  background-color: #eee;
+  padding: 0 10rpx;
+  width: 236rpx;
+  position: absolute;
+  top: -44rpx;
+  left:100rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.25s;
+}
+
+.selectmonth_box{
+  background-color: #eee;
+  padding: 0 10rpx;
+  width: 86rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.1s;
+  position: absolute;
+  top:65rpx;
+  left:101rpx;
+}
+
+.selectday_box{
+  background-color: #eee;
+  padding: 0 10rpx;
+  width: 86rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.05s;
+  position: absolute;
+  top:65rpx;
+  left: 247rpx;
+}
+
+@keyframes myfirst {
+  from {
+      height: 0rpx;
+  }
+
+  to {
+      height: 210rpx;
+  }
+}
+
+.select_one {
+  width: 93%;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}
 .loginBottom {
   background-image: url(https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184519.png);
   width: 100%;
   height: 825rpx;
   background-size: 100% auto;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
+.data {
+  margin-bottom:22rpx;
+  position: relative;
+}
 .left{ 
   float: left;
 }
 
+.left image{
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  position: absolute;
+  left: 0rpx;
+  top:10rpx
+}
+.left .mytext{
+  position: absolute;
+  left: 75rpx;
+  top:15rpx
+}
  .right{ 
   float: right;
+  font-size: 35rpx;
 }
 
 .img {
   display: inline-block;
-  width: 40rpx;
-  height: 40rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.inlocation1{
+  position: relative;
+  top: -56rpx;
+  left: 443rpx;
 }
 
-.data {
-  margin-top: 10rpx;
+.outlocation1{
+  position: relative;
+  top: -100rpx;
+  left: 590rpx;
 }
 
-/* .item .remove{
-  position: absolute;
-  left: 450rpx;
-} */
-
-/* .cell {
-  height: 50rpx; */
-  /* background-color: orange; */
-  /* margin-top: 30rpx;
-  display: flex;
+.inlocation2{
+  position: relative;
+  top:-30rpx;
+  left:418rpx
 }
-
-.delBtn {
-  padding: 0;
-  width: 100rpx;
-  line-height: 50rpx;
-  font-size: 22rpx;
+.outlocation2{
+  position: relative;
+  top:-69rpx;
+  left:571rpx
 }
-
-.ma{
-  /* background-color: tomato; */
-  /* height: 100%;
-  flex: 1;
-}
-
-.mv {
-  height: 100rpx;
-  width: 750rpx;
-  background-color: white;
-  z-index: 999;
-} */

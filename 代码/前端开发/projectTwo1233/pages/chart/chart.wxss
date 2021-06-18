@@ -1,0 +1,70 @@
+.left {
+	width: 700rpx;
+	height: 500rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+ 
+.white {
+	width: 136rpx;
+	height: 136rpx;
+	border-radius: 50%;
+	/* position: absolute;
+	top: 50%;
+	left: 50%; */
+	z-index: 10;
+	background-color: red;
+  transform: translate(-50%, -50%);
+  position: relative;
+  top: 10rpx;
+  left: 10rpx;
+}
+.loginNav{
+  height: 275rpx;
+  width: 100%;
+  background-image: url(https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210528184803.png);
+}
+.loginPicture1{
+  position: relative;
+  top: 10rpx;
+  left: 10rpx;
+}
+.btnChoice{
+  position: absolute;
+  top: 170rpx;
+  left: 202rpx;
+}
+
+/* 收入按钮 */
+.btnIncome{
+  display: inline-block;
+  border-radius: 50rpx;
+}
+
+/* 支出按钮 */
+.btnExpenditure{
+  display: inline-block;
+  border-radius:50rpx;
+  position: relative;
+  left: 20rpx;
+}
+.colorbox1{
+  position: relative;
+  left: 0rpx;
+  top: 100rpx;
+}
+.box11{
+  width: 90rpx;
+  height: 45rpx;
+  background-color: #56597a;
+}
+.colorbox2{
+  position: relative;
+  left: 0rpx;
+  top: 50rpx;
+}
+button{
+  margin-left: 10rpx;
+}

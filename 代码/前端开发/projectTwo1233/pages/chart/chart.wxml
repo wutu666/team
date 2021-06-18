@@ -1,1 +1,39 @@
 <!--pages/chart/chart.wxml-->
+<view class="loginNav">
+  <view class="loginPicture1">随手记</view>
+  <view class="btnChoice">
+    <button style="width:50%" class="btnExpenditure" bindtap="Expenditure">支出</button>
+    <button style="width:50%" class="btnIncome" bindtap="Income">收入</button>
+  </view>
+</view>
+<view class="left" wx:if="{{chooseExpenditure==true}}">
+  <!-- <cover-view class="white"></cover-view> -->
+  <canvas style="width: 300px; height: 300px;" canvas-id="Canvas1"></canvas>
+  <view class="colorbox1">
+  <view class="box11"><view style="color:white">吃喝</view></view>
+  <view class="box11" style="background-color:#6b79a7"><view style="color:white">购物</view></view>
+  <view class="box11" style="background-color:#8f90c3"><view style="color:white">话费</view></view>
+  <view class="box11" style="background-color:#c0c0ec"><view style="color:white">医疗</view></view>
+  <view class="box11" style="background-color:#535196"><view style="color:white">教育</view></view>
+  <view class="box11" style="background-color:#7257ad"><view style="color:white">礼物</view></view>
+  <view class="box11" style="background-color:#8b57ad"><view style="color:white">电器</view></view>
+  <view class="box11" style="background-color:#bc9ed0"><view style="color:white">日用</view></view>
+  <view class="box11" style="background-color:#892c51"><view style="color:white">旅游</view></view>
+  <view class="box11" style="background-color:#bd4977"><view style="color:white">服装</view></view>
+  <view class="box11" style="background-color:#f087b1"><view style="color:white">书籍</view></view>
+  <view class="box11" style="background-color:#fbcfe0"><view style="color:white">其他</view></view>
+  </view>
+</view>
+<view class="left" wx:if="{{chooseIncome==true}}">
+  <!-- <cover-view class="white"></cover-view> -->
+  <canvas style="width: 550px; height: 300px;" canvas-id="Canvas2"></canvas>
+  <view class="colorbox2">
+    <view class="box11"><view style="color:white">生活费</view></view>
+    <view class="box11" style="background-color:#6b79a7"><view style="color:white">奖学金</view></view>
+    <view class="box11" style="background-color:#8f90c3"><view style="color:white">工资</view></view>
+    <view class="box11" style="background-color:#c0c0ec"><view style="color:white">兼职</view></view>
+    <view class="box11" style="background-color:#535196"><view style="color:white">理财</view></view>
+    <view class="box11" style="background-color:#7257ad"><view style="color:white">红包</view></view>
+    <view class="box11" style="background-color:#8b57ad"><view style="color:white">其他</view></view>
+  </view>
+</view>

@@ -32,11 +32,14 @@
   position: relative;
   width: 220rpx;
   display: inline-block;
+  top: -1080rpx;
+  left: 250rpx;
 }
 .nian{
   position: relative;
   left: 206rpx;
-  top: -51rpx;
+  top: -55rpx;
+  
 }
 .month{
   position: relative;
@@ -73,7 +76,8 @@
   padding: 0 10rpx;
   width: 185rpx;
   position: absolute;
-  top: 65rpx;
+  top: 82rpx;
+  left: 251rpx;
   z-index: 1;
   overflow: hidden;
   animation: myfirst 0.25s;
@@ -120,3 +124,56 @@
   line-height: 60rpx;
   border-bottom: 1px solid #ccc;
 }
+
+.top {
+  margin-top: 70rpx;
+  margin-left: 341rpx;
+}
+
+.lastmoney {
+  margin-top: 20rpx;
+  margin-left: 320rpx;
+}
+
+.top2 {
+  margin-left: 200rpx;
+}
+
+.head {
+  float: left;
+  margin-left: 70rpx;
+  margin-right: 50rpx;
+}
+/* .ttmonth,.expendin{
+  float: left;
+  margin-left: 100rpx;
+  margin-right: 50rpx;
+}
+.expendout,.rest{
+  float: left;
+  margin-left: 45rpx;
+  margin-right: 45rpx;
+} */
+.ttmonth,.expendin,.expendout,.rest{
+  float: left;
+  width: 186rpx;
+  text-align: center;
+  margin-top: 1rpx;
+}
+
+
+.contain {
+  background-image: url("https://wutu-typora.oss-cn-beijing.aliyuncs.com/picture/20210615144650.png?versionId=CAEQDxiBgID6tti50BciIDdkOGU5MmZhNmFiNjRmMDA5N2Q4NjY3MzQ0ZmY5OGI1");
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+  background-position-y: 200rpx;
+  background-position-x: 70rpx;
+  width: 100%;
+  height: 825rpx;
+  opacity: 0.65;
+}
+
+
+
+
+
